@@ -36,6 +36,7 @@ fun FormulirView(modifier: Modifier = Modifier,
     // var (variable dan bisa di ubah)
     //menyimpan data yang di inputkan
     var nama by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var noHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
