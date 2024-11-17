@@ -46,7 +46,7 @@ fun FormulirView(modifier: Modifier = Modifier,
     Column(modifier = Modifier
         .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(text = "Biodata" ,
+        Text(text = "Input Data Mahasiswa" ,
             fontWeight = FontWeight.Bold ,
             fontSize = 28.sp)
         Spacer(modifier = Modifier.padding (20.dp))
