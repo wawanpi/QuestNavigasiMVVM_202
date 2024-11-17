@@ -48,6 +48,7 @@ fun TampilMahasiswaView(
             judul = "Alamat",
             isinya = mhs.alamat
         )
+
     }
 }
 @Composable
