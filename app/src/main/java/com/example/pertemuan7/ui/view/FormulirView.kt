@@ -118,8 +118,8 @@ fun FormulirView(modifier: Modifier = Modifier,
             }
         )
         Button(onClick = {
-            onClikButton(listData)
-        } , modifier = Modifier.padding(vertical = 10.dp)) {
+                onClikButton(listData)
+            } , modifier = Modifier.padding(vertical = 10.dp)) {
             Text("Simpan")
 
         }

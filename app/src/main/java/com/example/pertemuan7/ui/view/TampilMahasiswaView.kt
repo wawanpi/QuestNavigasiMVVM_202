@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -14,11 +15,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.example.pertemuan7.Model.Mahasiswa
 
 @Composable
 fun TampilMahasiswaView(
-    mhs: Mahasiswa
+    mhs: Mahasiswa,
+    navController: NavHostController
+
 ){
     Column (  modifier = Modifier.fillMaxSize()){
         Text(text = "Data Mahasiswa" ,
@@ -60,7 +64,17 @@ fun TampilMahasiswaView(
             judul = "Alamat",
             isinya = mhs.alamat
         )
-
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center
+        ) {
+            Button(
+                onClick = { navController.popBackStack() },
+                modifier = Modifier.padding(16.dp)
+            ) {
+                Text("Kembali")
+            }
+        }
     }
 }
 @Composable
