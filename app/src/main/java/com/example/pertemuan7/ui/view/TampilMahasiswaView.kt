@@ -22,6 +22,11 @@ fun TampilMahasiswaView(
             isinya = mhs.nama
         )
         TampilData(
+            judul = "nim",
+            isinya = mhs.nim
+        )
+
+        TampilData(
             judul = "Jenis Kelamin",
             isinya = mhs.gender
         )
